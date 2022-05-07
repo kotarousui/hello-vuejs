@@ -1,6 +1,6 @@
 # hyrule-jobs
 
-「Vue 3 with TypeScript Tutorial」で作成  
+Youtube講座 「Vue 3 with TypeScript Tutorial」 を元に作成  
 https://youtu.be/JfI5PISLr9w
 
 ## Project setup
