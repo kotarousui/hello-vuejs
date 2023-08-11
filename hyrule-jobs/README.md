@@ -1,28 +1,26 @@
-# app
+# hyrule-jobs
+
+Youtube講座 「Vue 3 with TypeScript Tutorial」 を元に作成  
+https://youtu.be/JfI5PISLr9w
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-yarn build
-```
-
-### Run your end-to-end tests
-```
-yarn test:e2e
+npm run build
 ```
 
 ### Lints and fixes files
 ```
-yarn lint
+npm run lint
 ```
 
 ### Customize configuration
