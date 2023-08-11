@@ -13,3 +13,12 @@ services:
       - '8080:8080'
     stdin_open: true
     tty: true
+  cypress:
+    image: 'cypress/included:3.4.0'
+    depends_on:
+      - vue3-app
+    environment:
+      - CYPRESS_baseUrl=http://vue3-app:8080
+    working_dir: /e2e
+    volumes:
+      - ./vue3-typescript-app:/e2e
