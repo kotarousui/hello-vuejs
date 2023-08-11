@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  vue3-app:
+    container_name: vue3-app
+    build:
+      context: ./vue3-typescript-app
+      dockerfile: ./Dockerfile
+    command: yarn serve
+    volumes:
+      - ./vue3-typescript-app:/app
+    ports:
+      - '8080:8080'
+    stdin_open: true
+    tty: true
