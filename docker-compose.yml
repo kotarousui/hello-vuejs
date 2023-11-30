@@ -14,6 +14,7 @@ services:
     stdin_open: true
     tty: true
   cypress:
+    container_name: cypress
     image: 'cypress/included:3.4.0'
     depends_on:
       - vue3-app
@@ -22,3 +23,5 @@ services:
     working_dir: /e2e
     volumes:
       - ./vue3-typescript-app:/e2e
+    profiles:
+      - e2e
