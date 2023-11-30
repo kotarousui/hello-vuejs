@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: vite-frontend
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    command: './bin_entrypoints/run_dev.sh'
+    volumes:
+      - ./frontend:/app
+    ports:
+      - '3000:3000'
